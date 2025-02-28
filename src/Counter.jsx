@@ -39,15 +39,19 @@ const Button = styled.button`
 `;
 
 const Counter = () => {
-  const count = useSelector((state) => state);
+  const products = useSelector((state) => state.products);
   const dispatch = useDispatch();
 
   return (
     <CounterContainer>
       <h2>Redux Counter</h2>
-      <CountText>Count: {count}</CountText>
-      <Button primary onClick={() => dispatch(increment())}>Increment</Button>
-      <Button onClick={() => dispatch(decrement())}>Decrement</Button>
+      {products.map(product => (
+        <div key={product.id}>
+          <CountText>{product.name}: {product.quantity}</CountText>
+          <Button primary onClick={() => dispatch(increment(product.id))}>+</Button>
+          <Button onClick={() => dispatch(decrement(product.id))}>-</Button>
+        </div>
+      ))}
     </CounterContainer>
   );
 };

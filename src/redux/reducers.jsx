@@ -29,6 +29,14 @@ const productReducer = (state = initialState, action) => {
         ),
       };
 
+    case 'RESET':
+      return {
+        ...state,
+        products: state.products.map(product =>
+          product.id === action.payload ? { ...product, quantity: 0 } : product
+        ),
+      };
+
     default:
       return state;
   }

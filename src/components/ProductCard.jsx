@@ -101,9 +101,7 @@ const ProductCard = ({ product }) => {
       <CounterContainer>
         <Button onClick={() => dispatch(decrement(product.id))}>-</Button>
         <Count>{product.quantity}</Count>
-        <Button primary onClick={() => dispatch(increment(product.id))}>
-          +
-        </Button>
+        <Button onClick={() => dispatch(increment(product.id))}>+</Button>
       </CounterContainer>
     </Card>
   );
