@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "MacBook Pro",
+    "description": "Ноутбук Apple M3 Pro",
+    "price": 2499,
+    "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp14-spaceblack-202310_GEO_EMEA_LANG_DE_FMT_WHH?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1697319484981"
+  },
+  {
+    "id": 2,
+    "name": "iPhone 15 Pro",
+    "description": "Смартфон Apple з камерою 48 Мп",
+    "price": 1199,
+    "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-15-pro-storage-select-202309-6-7inch_AV1_GEO_EMEA_LANG_DE_FMT_WHH?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1692925338003"
+  },
+  {
+    "id": 3,
+    "name": "AirPods Pro",
+    "description": "Бездротові навушники Apple",
+    "price": 249,
+    "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MQD83?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1660803972361"
+  }
+]
